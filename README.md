@@ -94,7 +94,7 @@ cordova.plugins.Hcaptcha.verify(onSuccess, onFailure, args);
 - You must verify the generated tokens from the server side to complete the verification correctly.
 - The hCaptcha params `size` and `theme` are not configurable since they are valid for the checkbox only.
 - The plugin will not render the checkbox and instead jump directly to the CAPTCHA challenge.
-- The plugin does not work on Android 4.4 because the hCaptcha SDK has internal dependencies not available in API 19.
+- The plugin does not work on Android 4.4 because the SDK has dependencies not available in API 19.
 - On cordova-android 9.X.X and earlier the plugin requires [cordova-plugin-android-fragmentactivity](https://www.npmjs.com/package/cordova-plugin-android-fragmentactivity).
 
 # Plugin demo app
