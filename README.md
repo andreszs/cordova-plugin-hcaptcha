@@ -2,7 +2,7 @@
 
 # cordova-plugin-hcaptcha
 
-Cordova plugin for integrating the [hCaptcha](https://github.com/hCaptcha/hcaptcha-android-sdk) challenge [Android SDK](https://github.com/hCaptcha/hcaptcha-android-sdk) and [web component API](https://docs.hcaptcha.com/invisible).
+Cordova plugin for integrating the [hCaptcha](https://www.hcaptcha.com) challenge [Android SDK](https://github.com/hCaptcha/hcaptcha-android-sdk) and [web component API](https://docs.hcaptcha.com/invisible).
 
 # Platforms
 
