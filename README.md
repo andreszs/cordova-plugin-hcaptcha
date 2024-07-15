@@ -99,7 +99,7 @@ cordova.plugins.Hcaptcha.verify(onSuccess, onFailure, args);
 
 # Plugin demo app
 
-- [Compiled APK](https://github.com/andreszs/cordova-plugin-demos/com.andreszs.hcaptcha.demo/apk)
+- [Compiled APK](https://github.com/andreszs/cordova-plugin-demos/tree/main/com.andreszs.hcaptcha.demo/apk)
 - [Source code for www folder](https://github.com/andreszs/cordova-plugin-demos)
 
 <img src="https://github.com/andreszs/cordova-plugin-demos/blob/main/com.andreszs.hcaptcha.demo/screenshots/android/hcaptcha-001.png?raw=true" width="200" /> <img src="https://github.com/andreszs/cordova-plugin-demos/blob/main/com.andreszs.hcaptcha.demo/screenshots/android/hcaptcha-002.png?raw=true" width="200" /> <img src="https://github.com/andreszs/cordova-plugin-demos/blob/main/com.andreszs.hcaptcha.demo/screenshots/android/hcaptcha-003.png?raw=true" width="200" />
