@@ -1,0 +1,40 @@
+{
+    "name": "cordova-plugin-hcaptcha",
+    "version": "1.0.0",
+    "description": "A cordova plugin for the hCaptcha API",
+    "cordova": {
+        "id": "cordova-plugin-hcaptcha",
+        "platforms": [
+            "android",
+            "browser"
+        ]
+    },
+    "engines": {
+        "cordovaDependencies": {
+            "1.0.0": {
+                "cordova": ">=10.0.0",
+                "cordova-android": ">=10.0.0"
+            }
+        }
+    },
+    "main": "www/Hcaptcha.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/andreszs/cordova-plugin-hcaptcha.git"
+    },
+    "keywords": [
+        "ecosystem:cordova",
+        "cordova-android",
+        "cordova",
+        "hcaptcha"
+    ],
+    "bugs": {
+        "url": "https://github.com/andreszs/cordova-plugin-hcaptcha/issues"
+    },
+    "homepage": "https://github.com/andreszs/cordova-plugin-hcaptcha",
+    "author": "Andres Zsögön",
+    "license": "MIT"
+}

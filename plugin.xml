@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="cordova-plugin-hcaptcha" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>Hcaptcha</name>
+    <description>A cordova plugin for the hCaptcha API</description>
+    <author>Andres Zsögön</author>
+    <license>MIT</license>
+    <keywords>hcaptcha,android,browser</keywords>
+    <info>------------------------------------------------------------
+ Use HCAPTCHA_VERSION to set hcaptcha-android-sdk dependency version.
+ Visit https://github.com/andreszs/cordova-plugin-demos for demo apps.
+------------------------------------------------------------</info>
+    
+    <engines>
+        <engine name="cordova" version=">=10.0.0" />
+        <engine name="cordova-android" version=">=10.0.0" />
+    </engines>
+    
+    <js-module name="Hcaptcha" src="www/Hcaptcha.js">
+        <clobbers target="cordova.plugins.Hcaptcha" />
+    </js-module>
+    
+    <platform name="android">
+        <framework src="repositories.gradle" custom="true" type="gradleReference" />
+		<preference name="HCAPTCHA_VERSION" default="4.0.0" />
+        <framework src="com.github.hcaptcha:hcaptcha-android-sdk:$HCAPTCHA_VERSION" />
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Hcaptcha">
+                <param name="android-package" value="com.andreszs.hcaptcha.HCaptchaPlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/HCaptchaPlugin.java" target-dir="src/com/andreszs/hcaptcha" />
+    </platform>
+    
+    <platform name="browser">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Hcaptcha">
+                <param name="browser-package" value="Hcaptcha" />
+            </feature>
+        </config-file>
+        <js-module src="src/browser/HCaptchaProxy.js" name="HCaptchaProxy">
+            <runs />
+        </js-module>
+    </platform>
+
+</plugin>
