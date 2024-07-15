@@ -14,7 +14,7 @@ Cordova plugin for integrating the [hCaptcha](https://github.com/hCaptcha/hcaptc
 ### Plugin Versions
 
 | Plugin version | Cordova | Cordova Android | hCaptcha |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | 1.0.0 | >= 10.0.0 | >= 10.0.0 | 4.0.0 |
 
 ### Install latest version from NPM
@@ -23,7 +23,7 @@ Cordova plugin for integrating the [hCaptcha](https://github.com/hCaptcha/hcaptc
   cordova plugin add cordova-plugin-hcaptcha
 ```
 
-### Install latest with custom [hCaptcha SDK](https://github.com/hCaptcha/hcaptcha-android-sdk/releases) version
+### Install latest with custom [SDK](https://github.com/hCaptcha/hcaptcha-android-sdk/releases) version
 
 ```bash
   cordova plugin add cordova-plugin-hcaptcha --variable HCAPTCHA_VERSION=4.0.0
@@ -95,11 +95,11 @@ cordova.plugins.Hcaptcha.verify(onSuccess, onFailure, args);
 - The hCaptcha params `size` and `theme` are not configurable since they are valid for the checkbox only.
 - The plugin will not render the checkbox and instead jump directly to the CAPTCHA challenge.
 - The plugin does not work on Android 4.4 because the hCaptcha SDK has internal dependencies not available in API 19.
-- On cordova-android@9.X.X and earlier the plugin requires [cordova-plugin-android-fragmentactivity](https://www.npmjs.com/package/cordova-plugin-android-fragmentactivity).
+- On cordova-android 9.X.X and earlier the plugin requires [cordova-plugin-android-fragmentactivity](https://www.npmjs.com/package/cordova-plugin-android-fragmentactivity).
 
 # Plugin demo app
 
-- [Compiled APK and reference](https://www.andreszsogon.com/com-andreszs-hcaptcha-demo/)
+- [Compiled APK](https://github.com/andreszs/cordova-plugin-demos/com.andreszs.hcaptcha.demo/apk)
 - [Source code for www folder](https://github.com/andreszs/cordova-plugin-demos)
 
 <img src="https://github.com/andreszs/cordova-plugin-demos/blob/main/com.andreszs.hcaptcha.demo/screenshots/android/hcaptcha-001.png?raw=true" width="200" /> <img src="https://github.com/andreszs/cordova-plugin-demos/blob/main/com.andreszs.hcaptcha.demo/screenshots/android/hcaptcha-002.png?raw=true" width="200" /> <img src="https://github.com/andreszs/cordova-plugin-demos/blob/main/com.andreszs.hcaptcha.demo/screenshots/android/hcaptcha-003.png?raw=true" width="200" />
